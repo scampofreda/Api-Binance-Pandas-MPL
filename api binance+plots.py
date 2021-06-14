@@ -1,3 +1,5 @@
+### Código para usar la API de Binance para extraer datos útiles sobre criptos, corrección de algunos datos y plots a modo de ejemplo de la librería mplfinance.
+### Las lineas que tienen un solo '#' son para ir borrando a medida que se va avanzando con el codigo y chequear el output en la consola.
 import pandas as pd
 
 ### Instalo e importo las librerias que necesito poniendo: !pip install python-binance mplfinance
@@ -10,8 +12,8 @@ from binance import Client
 ### Al momento de crear la API es IMPORTANTE ir a 'Editar restricciones' y habilitar solo para lectura
 ### asi como tambien restringir el acceso solo para direcciones de IP confiables. Ahi pongo mi IP.
 ### Inserto las keys que genera Binance en variables.
-api_key = 'Aca se inserta la api key, dejar comillas'
-secret_key = 'aca la secreta'
+api_key = 'Aca va la api key entre comillas'
+secret_key = 'Aca la secreta'
 
 ### Autenticacion de cliente
 client = Client(api_key,secret_key)
